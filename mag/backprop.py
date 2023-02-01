@@ -104,7 +104,6 @@ class Variable:
 
         self._grad = 1
         for node in reversed(topo):
-            print(node._val)
             node._backward()
 
     def draw(self):
